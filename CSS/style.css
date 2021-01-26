@@ -1,0 +1,102 @@
+body {
+    background:url("../IMG/background\ theme.jpg");
+    color: rgb(173, 166, 166);
+}
+
+.card{
+    width: 400px;
+    margin:100px auto;
+    padding: 20px;
+    
+    border-radius: 20px;
+}
+
+.card-photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 50%;
+    box-shadow: 0 5px 80px yellow;
+    opacity: 0;
+
+    animation-name: opacity-img;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    }
+
+.card-title {
+    opacity: 0;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(37, 32, 32);
+    font-family: Arial;
+
+    animation-name:  font-opacity-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.card-subtitle {
+    opacity: 0;
+    font-size: 18px;
+    color:rgb(37, 32, 32);
+    font-family: Arial;
+    text-align: center;
+
+    animation-name:  font-opacity-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.card-text {
+    opacity: 0;
+    font-size: 16px;
+    color:#000;
+    text-align: center;
+
+    animation-name:  font-opacity-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.card-list { 
+    opacity: 0;
+    padding-left: 35px;
+    color:#000;
+    list-style-position: inside;
+    font-size: 16px;
+
+    animation-name:  font-opacity-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity-img {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .6;
+    }
+}
+
+@keyframes font-opacity-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
